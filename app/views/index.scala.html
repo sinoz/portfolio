@@ -10,11 +10,385 @@
  * argument is an `Html` object containing the body of the page.
  *@
 @main("Welcome to Play") {
+<!-- *** NAVBAR ***
+_________________________________________________________ -->
 
-    @*
-     * Get an `Html` object by calling the built-in Play welcome
-     * template and passing a `String` message.
-     *@
-    @play20.welcome(message, style = "Scala")
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand scrollTo" href="#intro">I.A</a>
+        </div>
 
+        <div class="navbar-collapse collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#intro">Intro</a>
+                </li>
+                <li><a href="#about">About</a>
+                </li>
+                <li><a href="#references">My work</a>
+                </li>
+                <li><a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+
+    </div>
+</div>
+<!-- /#navbar -->
+<!-- *** NAVBAR END *** -->
+<div id="all">
+    <!-- *** INTRO IMAGE ***
+_________________________________________________________ -->
+    <div id="intro" class="clearfix">
+        <div class="item">
+            <div class="container">
+                <div class="row">
+                    <div class="carousel-caption">
+                        <h1 data-animate="fadeInDown">Hello, 안녕하세요, السلام عليكم!</h1>
+                        <h2 data-animate="slideInUp">Just your fellow software developer whom loves to toy with complex stuff in his free time.</h2>
+
+                        <a href="https://github.com/sinoz" class="btn btn-lg btn-outline">
+                            <i class="fa fa-github"></i> &nbsp;Checkout my work!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *** INTRO IMAGE END *** -->
+
+    <!-- *** ABOUT ***
+_________________________________________________________ -->
+    <div class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="title" data-animate="fadeInDown">About me</h2>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 text-left" data-animate="fadeInUp">
+                            <p>Hi there. My name is Ilyas and I am a 22 year old software developer residing in the Netherlands.</p>
+
+                            <strong>So what am I currently doing?</strong>
+                            <p>I am currently a freshman at the Hogeschool Rotterdam doing a full-time BSc Informatics course. After graduating a level four application development course, I still felt this sad hunger for more knowledge and experience in software engineering. Besides the work field, there really is no better place than a university to feed that hunger.</p>
+
+                            <p>For more information about my past and potential plans for the future, feel free to check out my <a href="https://nl.linkedin.com/in/sinoz">LinkedIn</a>!</p>
+                        </div>
+
+                        <div class="col-sm-6" data-animate="fadeInUp">
+                            <div class="skill-item">
+                                <div class="progress-title">
+                                    Java
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-skill1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                        <span class="sr-only">95</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="progress-title">
+                                    Scala
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                                        <span class="sr-only">75</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="progress-title">
+                                    C#
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-skill3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                        <span class="sr-only">70</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="progress-title">
+                                    Version Control
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-skill1" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                        <span class="sr-only">50</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="progress-title">
+                                    Unit Testing
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                                        <span class="sr-only">75</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 mt-big" data-animate="bounceIn">
+                    <!-- img src="@routes.Assets.versioned("images/projects/psync/2.png")" class="image img-circle img-responsive" alt="This is me - IT worker" -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#about -->
+
+    <!-- *** ABOUT END *** -->
+
+    <!-- *** INTERESTS ***
+_________________________________________________________ -->
+    <div class="section text-gradient" id="services">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row services">
+                    <div class="col-md-4" data-animate="fadeInUp">
+                        <h3 class="heading">Java Platform</h3>
+                        <p>We were all born somewhere right? My journey in software development started with Java. You could say that Java is my native language.</p>
+                    </div>
+
+                    <div class="col-md-4" data-animate="fadeInUp">
+                        <h3 class="heading">Reactive Programs</h3>
+                        <p>There's nothing worse than a program that refuses to respond to your input. This is where I specialize myself in. Making things respond so you can live an easier and probably a healthier life.</p>
+                    </div>
+
+                    <div class="col-md-4" data-animate="fadeInUp">
+                        <h3 class="heading">Distributed Systems</h3>
+                        <p>Unfortunately not a specialty of mine <strong>yet</strong> but definitely something I have a large personal interest in.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="text-center">
+                    <p class="lead">Would you like to know more or just discuss something?</p>
+
+                    <p><a href="#contact" class="btn btn-default btn-lg scrollTo">Contact me</a>
+                    </p>
+                </div>
+
+            </div>
+            <!-- /.12 -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.section -->
+
+    <!-- *** SERVICES END *** -->
+
+    <!-- *** REFERENCES IMAGE ***
+_________________________________________________________ -->
+    <div class="section" id="references">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="mb20">
+                    <h2 class="title" data-animate="fadeInUp">My work</h2>
+                </div>
+
+                <ul id="filter" data-animate="fadeInUp">
+                    <li class="active">
+                        <a href="#" data-filter="all">All</a>
+                    </li>
+                </ul>
+
+                <div id="detail">
+
+                    <span class="close">&times;</span>
+
+                    <div id="detail-slider"></div>
+
+                    <div class="text-center">
+                        <h1 id="detail-title">&nbsp;</h1>
+                    </div>
+
+                    <div id="detail-content"></div>
+
+                </div>
+                <!-- Reference detail -->
+
+                <div id="references-masonry" data-animate="fadeInUp">
+                    <div class="reference-item" data-category="webdesign">
+                        <div class="reference">
+                            <a href="#">
+                                <img src="@routes.Assets.versioned("images/projects/psync/0.png")" class="img-responsive" alt=""/>
+                                <div class="overlay">
+                                    <h3 class="reference-title">PokeSync (Codename: Paragon)</h3>
+                                    <p>A discontinued Java 2D MMORPG project based around the famous Pokémon franchise.</p>
+                                </div>
+                            </a>
+
+                            <div class="sr-only reference-description" data-images="@routes.Assets.versioned("images/projects/psync/2.png"),@routes.Assets.versioned("images/projects/psync/0.png"),@routes.Assets.versioned("images/projects/psync/1.png")">
+                                <p>PokeSync is a 2D Pokémon MMORPG that was aimed for public alpha release in February 2016. The project had been in development for almost a year. The game consisted of client and server side software both written from scratch using Java.</p>
+
+                                <p>I am founder of the project and was the lead developer of the team. The development team consisted of five people contributing to game design, graphics, website and the actual game. However, unfortunately due to a lack of interest within the development team, the project was discontinued by December 2015.</p>
+
+                                <p>
+                                    A list of people I have worked with on this project:
+                                <ul>
+                                    <li>Graphics Designer <a href="http://waroxthegod.deviantart.com/">Cris Kevin Bjørndal</a></li>
+                                    <li>Web Developer <a href="http://collinhaines.com">Collin Haines</a></li>
+                                    <li>Game Designer <strong>Cameron Couch</strong></li>
+                                    <li>Assistant Game Design <strong>Rachel Couch</strong></li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /#references-masonry -->
+
+            </div>
+            <!-- /.12 -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.section -->
+
+    <!-- *** REFERENCES END *** -->
+
+    <!-- *** CONTACT ***
+_________________________________________________________ -->
+
+    <div class="section contact" id="contact" data-animate="bounceIn">
+        <div class="container">
+            <div class="col-md-12">
+
+
+                <h2 class="title">Contact me</h2>
+
+                <div class="row">
+
+                    <div class="col-md-8 col-md-offset-2">
+                        <form id="contact-form" method="post" action="contact.php">
+
+                            <div class="messages">
+
+                            </div>
+
+                            <div class="controls">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="name" class="form-control" placeholder="Your firstname *" required="required">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="surname" class="form-control" placeholder="Your lastname *" required="required">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="email" class="form-control" placeholder="Your email *" required="required">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" class="form-control" placeholder="Your phone">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"></textarea>
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <input type="submit" class="btn btn-primary btn-lg" value="Send message">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /.12 -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.section -->
+
+    <!-- *** CONTACT END *** -->
+
+    <!-- *** FOOTER ***
+_________________________________________________________ -->
+
+    <div class="section" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="social">
+                        <a href="http://stackoverflow.com/users/5263688/executorservice" class="btn-social btn-outline">
+                            <i class="fa fa-fw fa-stack-overflow"></i>
+                        </a>
+
+                        <a href="https://nl.linkedin.com/in/sinoz" class="btn-social btn-outline">
+                            <i class="fa fa-fw fa-linkedin"></i>
+                        </a>
+
+                        <a href="http://github.com/sinoz" class="btn-social btn-outline">
+                            <i class="fa fa-fw fa-github"></i>
+                        </a>
+                    </p>
+                </div>
+                <!-- /.6 -->
+
+                <div class="col-sm-6">
+                    <p>&copy; 2016 I.A Baas. All rights reserved.</p>
+                </div>
+
+                <div class="col-sm-12">
+                    <p class="template-bootstrapious">Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a></p>
+                    <!-- Not removing these links is part of the license conditions of the template. Thanks for understanding :) -->
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.section -->
+
+    <!-- *** FOOTER END *** -->
+</div>
+<!-- /#all -->
+
+<!-- #### JAVASCRIPT FILES ### -->
+
+<!-- js base -->
+<script src="@routes.Assets.versioned("javascripts/jquery-1.11.0.min.js")"></script>
+<script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")"></script>
+
+<!-- for demo purpose -->
+<script src="@routes.Assets.versioned("javascripts/jquery.cookie.js")"></script>
+
+<!-- waypoints for scroll spy -->
+<script src="@routes.Assets.versioned("javascripts/waypoints.min.js")"></script>
+
+<!-- masonry layout -->
+<script src="@routes.Assets.versioned("javascripts/masonry.pkgd.min.js")"></script>
+
+<!-- owl carousel -->
+<script src="@routes.Assets.versioned("javascripts/owl.carousel.min.js")"></script>
+
+<!-- jQuery scroll to -->
+<script src="@routes.Assets.versioned("javascripts/jquery.scrollTo.min.js")"></script>
+
+<!-- jQuery counter -->
+<script src="@routes.Assets.versioned("javascripts/jquery.counterup.min.js")"></script>
+
+<!-- jQuery parallax -->
+<script src="@routes.Assets.versioned("javascripts/jquery.parallax-1.1.3.js")"></script>
+
+<!-- main js file -->
+<script src="@routes.Assets.versioned("javascripts/front.js")"></script>
 }
