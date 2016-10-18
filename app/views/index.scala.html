@@ -1,3 +1,5 @@
+@()(implicit contactForm: Form[controllers.ContactRequest])
+
 @*
  * Call the `main` template. The argument is an `Html` object containing the body of the page.
  *@
@@ -266,7 +268,7 @@ _________________________________________________________ -->
                     <div class="row">
                     <div class="col-md-8 col-md-offset-2">
 
-                        <form id="contact-form" method="post" action="/">
+                        @helper.form(action = routes.HomeController.contactPost, 'id -> "contact-form") {
                             <div class="messages">
                             </div>
                             <div class="controls">
@@ -287,11 +289,11 @@ _________________________________________________________ -->
                                         <textarea name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"></textarea>
                                     </div>
                                     <div class="col-md-12 text-center">
-                                        <button type="submit" class="btn btn-primary btn-lg" value="Send message"></button>
+                                        <button type="submit" class="btn btn-primary btn-lg">Send message</button>
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        }
 
                     </div>
 
