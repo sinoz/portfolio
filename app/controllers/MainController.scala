@@ -7,7 +7,7 @@ import play.api.mvc._
 
 /** The controller of the home page. */
 @Singleton
-class HomeController @Inject() extends Controller {
+class MainController @Inject() extends Controller {
   /** Maps filled in user information from the contact form to a ContactRequest. */
   private implicit val contactForm = Form(
     mapping(

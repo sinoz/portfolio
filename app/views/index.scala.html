@@ -25,7 +25,9 @@ _________________________________________________________ -->
                 </li>
                 <li><a href="#about">About</a>
                 </li>
-                <li><a href="#references">My work</a>
+                <li><a href="#references">Projects</a>
+                </li>
+                <li><a href="#experience">Work Experience</a>
                 </li>
                 <li><a href="#contact">Contact</a>
                 </li>
@@ -157,7 +159,7 @@ _________________________________________________________ -->
                 <div class="row services">
                     <div class="col-md-4" data-animate="fadeInUp">
                         <h3 class="heading">Java Platform</h3>
-                        <p>We were all born somewhere right? My journey in software development started with Java. You could say that Java is my native language.</p>
+                        <p>We were all born somewhere, right? My journey in software development started with Java. Besides being fluent in Java, I am also skilled in other languages such as Scala, Kotlin and C#. My personal favorite software frameworks to build applications with are Akka and Play Framework. I also take interest in Big Data frameworks such as Hadoop and Spark.</p>
                     </div>
 
                     <div class="col-md-4" data-animate="fadeInUp">
@@ -167,7 +169,7 @@ _________________________________________________________ -->
 
                     <div class="col-md-4" data-animate="fadeInUp">
                         <h3 class="heading">Distributed Systems</h3>
-                        <p>Unfortunately not a specialty of mine <strong>yet</strong> but definitely something I have a large personal interest in.</p>
+                        <p>Unfortunately not a specialty of mine <strong>yet</strong> but definitely something I have a large personal interest in. A lot of time I spend at university goes into this topic, where I research, develop and experiment with network applications such as finance systems, online multiplayer games and backend of mobile apps.</p>
                     </div>
                 </div>
                 <hr>
@@ -178,7 +180,6 @@ _________________________________________________________ -->
                     <p><a href="#contact" class="btn btn-default btn-lg scrollTo">Contact me</a>
                     </p>
                 </div>
-
             </div>
             <!-- /.12 -->
         </div>
@@ -234,15 +235,14 @@ _________________________________________________________ -->
 
                                 <p>I am the founder of the project and was the lead developer of the team. The development team consisted of five people contributing to game design, graphics, website and the actual game. However, unfortunately due to a lack of interest within the development team, the project was discontinued by December 2015.</p>
 
-                                <p>
-                                    A list of people I have worked with on this project:
+                                <p>A list of people I have worked with on this project:</p>
+
                                 <ul>
                                     <li>Graphics Designer <a href="http://waroxthegod.deviantart.com/">Cris Kevin Bjørndal</a></li>
                                     <li>Web Developer <a href="http://collinhaines.com">Collin Haines</a></li>
                                     <li>Game Designer <strong>Cameron Couch</strong></li>
                                     <li>Assistant Game Design <strong>Rachel Couch</strong></li>
                                 </ul>
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -258,6 +258,33 @@ _________________________________________________________ -->
 
     <!-- *** REFERENCES END *** -->
 
+    <div class="section text-gradient" id="experience">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row services">
+                    <div class="col-sm-12">
+                        <h2 class="title" data-animate="fadeInDown">Work Experience</h2>
+                    </div>
+
+                    <div class="col-md-4" data-animate="fadeInUp">
+                        <h3 class="heading"></h3>
+                        <p></p>
+                    </div>
+
+                    <div class="col-md-4" data-animate="fadeInUp">
+                        <h3 class="heading">Creative Action</h3>
+                        <p>I have taken a part in an intership at the internet service company Creative Action, where I spent most of my time working on Android apps and maintaining content management systems. The internship lasted a year until I graduated and left the company to go to university.</p>
+                    </div>
+
+                    <div class="col-md-4" data-animate="fadeInUp">
+                        <h3 class="heading"></h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- *** CONTACT ***
 _________________________________________________________ -->
 
@@ -268,7 +295,7 @@ _________________________________________________________ -->
                     <div class="row">
                     <div class="col-md-8 col-md-offset-2">
 
-                        @helper.form(action = routes.HomeController.contactPost, 'id -> "contact-form") {
+                        @helper.form(action = routes.MainController.contactPost, 'id -> "contact-form") {
                             <div class="messages">
                             </div>
                             <div class="controls">
@@ -296,15 +323,10 @@ _________________________________________________________ -->
                         }
 
                     </div>
-
                 </div>
-
             </div>
-            <!-- /.12 -->
         </div>
-        <!-- /.container -->
     </div>
-    <!-- /.section -->
 
     <!-- *** CONTACT END *** -->
 
