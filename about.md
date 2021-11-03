@@ -193,13 +193,14 @@ body {
 {% highlight yaml %}
 ### Phantom settings
 paginate: 10
-footer_text: '© 2018 Jami Gibbs'
-admin_name: 'Jami Gibbs'
+footer_text: '© 2021 Ilyas Baas'
+admin_name: 'Ilyas Baas'
 google_analytics: "UA-9999999-99" # Update with your own tracking ID
 
 #### Phantom Navigation menu
 enable_nav: true
 nav_item:
   - { url: '/', text: 'Home' }
+  - { url: '/work', text: 'Work' }
   - { url: '/about', text: 'About' }
 {% endhighlight %}
