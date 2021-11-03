@@ -1,6 +1,6 @@
 ## Portfolio Site
 
-My personal portfolio site created using the Jekyll static site generator. This site is based on the Phantom template Jamie Gibbs has open-sourced which can be found [here](https://github.com/jamigibbs/phantom).
+My personal portfolio site created using the Jekyll static site generator.
 
 ## Building-and running it
 
@@ -18,3 +18,7 @@ bundle exec jekyll serve
 ```
 
 Then visit `http://localhost:4000` to see the landing page.
+
+## Credits
+
+ I'd like to credit Jami Gibbs for his beautiful, elegant yet simple Phantom template that he open-sourced. The Phantom template can be found [here](https://github.com/jamigibbs/phantom).
